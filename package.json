@@ -1,0 +1,17 @@
+{
+  "name": "easta",
+  "version": "1.0.0",
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "npm run lint && mocha"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-teppeis": "^5.1.0",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [],
+  "license": "MIT"
+}
