@@ -2,15 +2,23 @@
   "name": "easta",
   "version": "1.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
+  "engines": {
+    "node": ">=4"
+  },
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint *.js",
-    "test": "npm run lint && mocha"
+    "test": "npm run lint && mocha --require intelli-espower-loader"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-teppeis": "^5.1.0",
-    "mocha": "^3.2.0"
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.2.0",
+    "power-assert": "^1.4.2"
   },
   "keywords": [],
   "license": "MIT"
