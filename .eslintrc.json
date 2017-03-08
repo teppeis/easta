@@ -1,3 +1,6 @@
 {
-  "extends": "teppeis/node-es6"
+  "extends": "teppeis/node-es6",
+  "rules": {
+    "no-console": 0
+  }
 }

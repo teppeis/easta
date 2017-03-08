@@ -31,4 +31,17 @@ describe('easta', () => {
   it('Neutral', () => {
     assert(easta('À') === 'N');
   });
+
+  it('all', () => {
+    assert(easta('\u{0}') === 'N');
+    assert(easta('\u{1}') === 'N');
+    assert(easta('\u{2}') === 'N');
+    assert(easta('\u{3}') === 'N');
+    assert(easta('\u{4}') === 'N');
+    assert(easta('\u{1F}') === 'N');
+    assert(easta('\u{20}') === 'Na');
+    assert(easta('\u{21}') === 'Na');
+    assert(easta('\u{23}') === 'Na');
+    assert(easta('\u{24}') === 'Na');
+  });
 });
