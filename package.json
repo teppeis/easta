@@ -1,5 +1,6 @@
 {
   "name": "easta",
+  "description": "Unicode East Asian Width data for Node.js Edit",
   "version": "1.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
