@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "*.js"
   ],
   "scripts": {
     "lint": "eslint *.js",
@@ -19,6 +19,7 @@
     "eslint-config-teppeis": "^5.1.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^3.2.0",
+    "node-fetch": "^1.6.3",
     "power-assert": "^1.4.2"
   },
   "keywords": [],
