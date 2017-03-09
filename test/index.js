@@ -32,6 +32,12 @@ describe('easta', () => {
     assert(easta('À') === 'N');
   });
 
+  it('Out of range', () => {
+    assert(easta('\u{40000}') === 'N');
+    assert(easta('\u{50000}') === 'N');
+    assert(easta('\u{60000}') === 'N');
+  });
+
   it('all', () => {
     assert(easta('\u{0}') === 'N');
     assert(easta('\u{1}') === 'N');
