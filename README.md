@@ -4,10 +4,8 @@ easta
 Unicode East Asian Width data for Node.js Edit
 
 [![npm version][npm-image]][npm-url]
-[![npm downloads][npm-downloads-image]][npm-url]
 ![Node.js Version Support][node-version]
 [![build status][travis-image]][travis-url]
-[![windows build status][appveyor-image]][appveyor-url]
 [![dependency status][deps-image]][deps-url]
 ![License][license]
 
