@@ -1,13 +1,15 @@
 easta
 ====
 
-Unicode East Asian Width data for Node.js Edit
+[Unicode East Asian Width data](http://www.unicode.org/reports/tr11/) for Node.js
 
 [![npm version][npm-image]][npm-url]
 ![Node.js Version Support][node-version]
 [![build status][travis-image]][travis-url]
 [![dependency status][deps-image]][deps-url]
 ![License][license]
+
+Based on [EastAsianWidth-9.0.0](http://www.unicode.org/Public/9.0.0/ucd/EastAsianWidth.txt).
 
 # Usage
 
