@@ -15,7 +15,7 @@
     "test": "npm run lint && mocha --require intelli-espower-loader"
   },
   "devDependencies": {
-    "eslint": "^3.17.1",
+    "eslint": "^4.0.0",
     "eslint-config-teppeis": "^5.1.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^3.2.0",

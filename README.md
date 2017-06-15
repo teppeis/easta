@@ -1,6 +1,8 @@
 easta
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/easta.svg)](https://greenkeeper.io/)
+
 [Unicode East Asian Width data](http://www.unicode.org/reports/tr11/) for Node.js
 
 [![npm version][npm-image]][npm-url]
