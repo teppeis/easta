@@ -9,9 +9,9 @@ easta
 [![dependency status][deps-image]][deps-url]
 ![License][license]
 
-Based on [EastAsianWidth-9.0.0](http://www.unicode.org/Public/9.0.0/ucd/EastAsianWidth.txt).
+Based on [EastAsianWidth-10.0.0](http://www.unicode.org/Public/10.0.0/ucd/EastAsianWidth.txt).
 
-# Usage
+## Usage
 
 ```js
 const easta = require('easta');
@@ -23,6 +23,12 @@ assert(easta('ｱ') === 'H'); // Halfwidth
 assert(easta('α') === 'A'); // Ambiguous
 assert(easta('À') === 'N'); // Neutral
 ```
+
+## Changelog
+
+- 2.0.0: update for Unicode 10.0.0
+- 1.0.1: fix document
+- 1.0.0: initial release (based on Unicode 9.0.0)
 
 ## License
 
