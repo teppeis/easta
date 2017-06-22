@@ -50,4 +50,9 @@ describe('easta', () => {
     assert(easta('\u{23}') === 'Na');
     assert(easta('\u{24}') === 'Na');
   });
+
+  it('Unicode 10.0.0', () => {
+    // FLYING SAUCER
+    assert(easta('\u{1F6F8}') === 'W');
+  });
 });

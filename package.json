@@ -11,6 +11,7 @@
     "*.js"
   ],
   "scripts": {
+    "gen": "node ./script/generate.js > ./generated-data.js",
     "lint": "eslint *.js",
     "test": "npm run lint && mocha --require intelli-espower-loader"
   },
