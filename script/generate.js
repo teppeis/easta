@@ -3,7 +3,7 @@
 const readline = require('readline');
 const fetch = require('node-fetch');
 
-const URL = 'http://www.unicode.org/Public/10.0.0/ucd/EastAsianWidth.txt';
+const URL = 'http://www.unicode.org/Public/11.0.0/ucd/EastAsianWidth.txt';
 
 fetch(URL)
   .then(res => readline.createInterface({input: res.body}))
