@@ -1,7 +1,7 @@
 {
   "name": "easta",
   "description": "Unicode East Asian Width data for Node.js",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
     "node": ">=6"
@@ -30,6 +30,9 @@
     "url": "git+ssh://git@github.com/teppeis/easta.git"
   },
   "bugs": "https://github.com/teppeis/easta/issues",
-  "keywords": ["unicode", "i18n"],
+  "keywords": [
+    "unicode",
+    "i18n"
+  ],
   "license": "MIT"
 }
