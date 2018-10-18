@@ -55,4 +55,9 @@ describe('easta', () => {
     // FLYING SAUCER
     assert(easta('\u{1F6F8}') === 'W');
   });
+
+  it('Unicode 11.0.0', () => {
+    // RACOON
+    assert(easta('\u{1F99D}') === 'W');
+  });
 });
