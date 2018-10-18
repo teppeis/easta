@@ -3,7 +3,7 @@
 const readline = require('readline');
 const fetch = require('node-fetch');
 
-const URL = 'http://www.unicode.org/Public/10.0.0/ucd/EastAsianWidth.txt';
+const URL = 'http://www.unicode.org/Public/11.0.0/ucd/EastAsianWidth.txt';
 
 fetch(URL)
   .then(res => readline.createInterface({input: res.body}))
@@ -21,9 +21,11 @@ fetch(URL)
         const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?;(\w+)/.exec(line);
         if (match) {
           const [, start, end, type] = match;
-          if (type === prevType &&
-              ((prevEnd && Number(`0x${prevEnd}`) + 1 === Number(`0x${start}`)) ||
-              (!prevEnd && Number(`0x${prevStart}`) + 1 === Number(`0x${start}`)))) {
+          if (
+            type === prevType &&
+            ((prevEnd && Number(`0x${prevEnd}`) + 1 === Number(`0x${start}`)) ||
+              (!prevEnd && Number(`0x${prevStart}`) + 1 === Number(`0x${start}`)))
+          ) {
             // concat this line with previous line
             if (end) {
               prevEnd = end;
