@@ -25,7 +25,8 @@ assert(easta('À') === 'N'); // Neutral
 
 ## Changelog
 
-- 2.0.0: update for Unicode 10.0.0, support for Node 8 and drop 7
+- 3.0.0: update for Unicode 11.0.0, support for Node v10 and drop v4
+- 2.0.0: update for Unicode 10.0.0, support for Node v8 and drop v7
 - 1.0.1: fix document
 - 1.0.0: initial release (based on Unicode 9.0.0)
 
