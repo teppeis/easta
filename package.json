@@ -16,13 +16,13 @@
     "test": "npm run lint && mocha --require intelli-espower-loader"
   },
   "devDependencies": {
-    "eslint": "^5.7.0",
+    "eslint": "^5.9.0",
     "eslint-config-teppeis": "^8.3.1",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
     "node-fetch": "^2.2.1",
     "power-assert": "^1.6.1",
-    "prettier": "~1.14.3"
+    "prettier": "~1.15.2"
   },
   "homepage": "https://github.com/teppeis/easta",
   "repository": {
