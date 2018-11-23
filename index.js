@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const data = require('./generated-data');
+const data = require('./generated-data.min');
 
 /**
  * @param {string} char
