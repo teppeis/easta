@@ -15,7 +15,7 @@ fetch(URL)
     lines.on('line', line => {
       if (n === 0) {
         console.log(line.replace(/^# (EastAsianWidth-.*)$/, '// $1'));
-        console.log('module.exports = [');
+        console.log('exports.data = [');
       } else {
         const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?;(\w+)/.exec(line);
         if (match) {
@@ -46,13 +46,25 @@ fetch(URL)
       // output last line
       outputLine(prevStart, prevEnd, prevType);
       console.log('];');
+      const typesStr = JSON.stringify(Array.from(types.keys()));
+      console.log(`exports.types = ${typesStr};`);
     });
   });
 
 function outputLine(start, end, type) {
+  const typeId = getTypeId(type);
   if (end) {
-    console.log(`['${type}', 0x${start}, 0x${end}],`);
+    console.log(`[${typeId}, 0x${start}, 0x${end}],`);
   } else {
-    console.log(`['${type}', 0x${start}],`);
+    console.log(`[${typeId}, 0x${start}],`);
   }
+}
+
+const types = new Map();
+
+function getTypeId(type) {
+  if (!types.has(type)) {
+    types.set(type, types.size);
+  }
+  return types.get(type);
 }
