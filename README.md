@@ -25,6 +25,7 @@ assert(easta('À') === 'N'); // Neutral
 
 ## Changelog
 
+- 3.0.1: reduce data size from 24KB to 13KB
 - 3.0.0: update for Unicode 11.0.0, support for Node v10 and drop v4
 - 2.0.0: update for Unicode 10.0.0, support for Node v8 and drop v7
 - 1.0.1: fix document
