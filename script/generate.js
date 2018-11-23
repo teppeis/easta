@@ -15,7 +15,6 @@ fetch(URL)
     lines.on('line', line => {
       if (n === 0) {
         console.log(line.replace(/^# (EastAsianWidth-.*)$/, '// $1'));
-        console.log(`'use strict';`);
         console.log('module.exports = [');
       } else {
         const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?;(\w+)/.exec(line);

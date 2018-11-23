@@ -1,5 +1,4 @@
 // EastAsianWidth-11.0.0.txt
-'use strict';
 module.exports = [
 ['N', 0x0000, 0x001F],
 ['Na', 0x0020, 0x007E],
