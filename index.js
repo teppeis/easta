@@ -22,15 +22,21 @@ function easta(char) {
     if (cp < range[1]) {
       right = middle - 1;
       continue;
-    } else if (cp > range[range.length - 1]) {
-      left = middle + 1;
-      continue;
     } else {
-      const type = types[range[0]];
-      if (!type) {
-        new Error(`Unexpected type: ${range[0]}`);
+      let end = range[1];
+      if (range.length === 3) {
+        end = range[1] + range[2];
       }
-      return type;
+      if (cp > end) {
+        left = middle + 1;
+        continue;
+      } else {
+        const type = types[range[0]];
+        if (!type) {
+          new Error(`Unexpected type: ${range[0]}`);
+        }
+        return type;
+      }
     }
   }
   return 'N';

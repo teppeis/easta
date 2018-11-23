@@ -54,7 +54,8 @@ fetch(URL)
 function outputLine(start, end, type) {
   const typeId = getTypeId(type);
   if (end) {
-    console.log(`[${typeId}, 0x${start}, 0x${end}],`);
+    const diff = Number(`0x${end}`) - Number(`0x${start}`);
+    console.log(`[${typeId}, 0x${start}, ${diff}],`);
   } else {
     console.log(`[${typeId}, 0x${start}],`);
   }
