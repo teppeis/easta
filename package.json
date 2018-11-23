@@ -17,6 +17,7 @@
     "build:minify": "uglifyjs ./generated-data.js > ./generated-data.min.js",
     "lint": "eslint *.js script test",
     "mocha": "mocha --require intelli-espower-loader",
+    "prepublishOnly": "run-s build",
     "pretest": "run-s build",
     "test": "run-s lint mocha"
   },
