@@ -1,7 +1,10 @@
 'use strict';
 
 const assert = require('assert');
-const data = require('./generated-data');
+const {data, types} = require('./generated-data.min');
+
+assert(data.length > 0);
+assert(types.length > 0);
 
 /**
  * @param {string} char
@@ -9,7 +12,6 @@ const data = require('./generated-data');
  */
 function easta(char) {
   assert(char.length > 0);
-  assert(data.length > 0);
 
   const cp = char.codePointAt(0);
   let left = 0;
@@ -20,11 +22,21 @@ function easta(char) {
     if (cp < range[1]) {
       right = middle - 1;
       continue;
-    } else if (cp > range[range.length - 1]) {
-      left = middle + 1;
-      continue;
     } else {
-      return range[0];
+      let end = range[1];
+      if (range.length === 3) {
+        end = range[1] + range[2];
+      }
+      if (cp > end) {
+        left = middle + 1;
+        continue;
+      } else {
+        const type = types[range[0]];
+        if (!type) {
+          new Error(`Unexpected type: ${range[0]}`);
+        }
+        return type;
+      }
     }
   }
   return 'N';
