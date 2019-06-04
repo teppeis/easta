@@ -25,7 +25,7 @@ assert(easta('À') === 'N'); // Neutral
 
 ## Changelog
 
-- 3.1.0: update for Unicode 12.1.0
+- 4.0.0: update for Unicode 12.1.0, support for Node v12 and drop v6
 - 3.0.1: reduce data size from 24KB to 13KB
 - 3.0.0: update for Unicode 11.0.0, support for Node v10 and drop v4
 - 2.0.0: update for Unicode 10.0.0, support for Node v8 and drop v7
@@ -43,7 +43,7 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [travis-url]: https://travis-ci.org/teppeis/easta
 [deps-image]: https://img.shields.io/david/teppeis/easta.svg
 [deps-url]: https://david-dm.org/teppeis/easta
-[node-version]: https://img.shields.io/badge/Node.js%20support-v6,v8,v10-brightgreen.svg
+[node-version]: https://img.shields.io/badge/Node.js%20support-v8+-brightgreen.svg
 [coverage-image]: https://img.shields.io/coveralls/teppeis/easta/master.svg
 [coverage-url]: https://coveralls.io/github/teppeis/easta?branch=master
 [license]: https://img.shields.io/npm/l/easta.svg
