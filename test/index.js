@@ -60,4 +60,14 @@ describe('easta', () => {
     // RACOON
     assert(easta('\u{1F99D}') === 'W');
   });
+
+  it('Unicode 12.0.0', () => {
+    // CHAIR
+    assert(easta('\u{1FA91}') === 'W');
+  });
+
+  it('Unicode 12.1.0', () => {
+    // REIWA
+    assert(easta('\u{32FF}') === 'W');
+  });
 });
