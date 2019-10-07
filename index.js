@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const assert = require('assert');
-const {data, types} = require('./generated-data.min');
+const assert = require("assert");
+const { data, types } = require("./generated-data.min");
 
 assert(data.length > 0);
 assert(types.length > 0);
@@ -39,7 +39,7 @@ function easta(char) {
       }
     }
   }
-  return 'N';
+  return "N";
 }
 
 module.exports = easta;
