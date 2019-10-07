@@ -1,21 +1,21 @@
-'use strict';
+"use strict";
 
-const readline = require('readline');
-const fetch = require('node-fetch');
+const readline = require("readline");
+const fetch = require("node-fetch");
 
-const URL = 'https://www.unicode.org/Public/12.1.0/ucd/EastAsianWidth.txt';
+const URL = "https://www.unicode.org/Public/12.1.0/ucd/EastAsianWidth.txt";
 
 fetch(URL)
-  .then(res => readline.createInterface({input: res.body}))
+  .then(res => readline.createInterface({ input: res.body }))
   .then(lines => {
     let n = 0;
     let prevStart;
     let prevEnd;
     let prevType;
-    lines.on('line', line => {
+    lines.on("line", line => {
       if (n === 0) {
-        console.log(line.replace(/^# (EastAsianWidth-.*)$/, '// $1'));
-        console.log('exports.data = [');
+        console.log(line.replace(/^# (EastAsianWidth-.*)$/, "// $1"));
+        console.log("exports.data = [");
       } else {
         const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?;(\w+)/.exec(line);
         if (match) {
@@ -42,10 +42,10 @@ fetch(URL)
       }
       n++;
     });
-    lines.on('close', () => {
+    lines.on("close", () => {
       // output last line
       outputLine(prevStart, prevEnd, prevType);
-      console.log('];');
+      console.log("];");
       const typesStr = JSON.stringify(Array.from(types.keys()));
       console.log(`exports.types = ${typesStr};`);
     });
