@@ -70,4 +70,9 @@ describe("easta", () => {
     // REIWA
     assert(easta("\u{32FF}") === "W");
   });
+
+  it("Unicode 13.0.0", () => {
+    // SEAL
+    assert(easta("\u{1F9AD}") === "W");
+  });
 });
