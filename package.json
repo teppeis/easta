@@ -1,7 +1,7 @@
 {
   "name": "easta",
   "description": "Unicode East Asian Width data for Node.js",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
     "node": ">=10.17"
