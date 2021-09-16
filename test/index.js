@@ -75,4 +75,9 @@ describe("easta", () => {
     // SEAL
     assert(easta("\u{1F9AD}") === "W");
   });
+
+  it("Unicode 14.0.0", () => {
+    // TROLL
+    assert(easta("\u{1F9CC}") === "W");
+  });
 });
