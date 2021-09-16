@@ -25,7 +25,7 @@ assert(easta('À') === 'N'); // Neutral
 
 ## Changelog
 
-- master: update for Unicode 14.0.0, drop Node v10
+- 6.0.0: update for Unicode 14.0.0, drop Node v10 and add typings for TypeScript
 - 5.0.0: update for Unicode 13.0.0, drop Node v8
 - 4.0.0: update for Unicode 12.1.0, support for Node v12 and drop v6
 - 3.0.1: reduce data size from 24KB to 13KB
