@@ -4,7 +4,7 @@
 
 [![npm version][npm-image]][npm-url]
 ![Node.js Version Support][node-version]
-[![build status][travis-image]][travis-url]
+[![ci status][ci-image]][ci-url]
 [![dependency status][deps-image]][deps-url]
 ![License][license]
 
@@ -40,11 +40,11 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [npm-image]: https://img.shields.io/npm/v/easta.svg
 [npm-url]: https://npmjs.org/package/easta
 [npm-downloads-image]: https://img.shields.io/npm/dm/easta.svg
-[travis-image]: https://img.shields.io/travis/teppeis/easta/master.svg
-[travis-url]: https://travis-ci.org/teppeis/easta
+[ci-image]: https://github.com/teppeis/easta/workflows/ci/badge.svg
+[ci-url]: https://github.com/teppeis/easta/actions?query=workflow%3Aci
 [deps-image]: https://img.shields.io/david/teppeis/easta.svg
 [deps-url]: https://david-dm.org/teppeis/easta
-[node-version]: https://img.shields.io/badge/Node.js%20support-v10.17+-brightgreen.svg
+[node-version]: https://img.shields.io/badge/Node.js%20support-v12+-brightgreen.svg
 [coverage-image]: https://img.shields.io/coveralls/teppeis/easta/master.svg
 [coverage-url]: https://coveralls.io/github/teppeis/easta?branch=master
 [license]: https://img.shields.io/npm/l/easta.svg
