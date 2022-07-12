@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["teppeis/node-v12", "teppeis/+prettier", "teppeis/+mocha"]
+  "extends": ["teppeis/node-v14", "teppeis/+prettier", "teppeis/+mocha"]
 }
