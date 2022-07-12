@@ -19,7 +19,7 @@
     "lint": "eslint *.js script test",
     "mocha": "mocha --require intelli-espower-loader",
     "prepublishOnly": "run-s build",
-    "pretest": "run-s build",
+    "pretest": "run-s build:minify",
     "test": "run-s lint mocha"
   },
   "devDependencies": {
