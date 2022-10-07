@@ -1,4 +1,4 @@
-const URL = "https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth.txt";
+const URL = "https://www.unicode.org/Public/15.0.0/ucd/EastAsianWidth.txt";
 
 const res = await fetch(URL);
 const text = await res.text();

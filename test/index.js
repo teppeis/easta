@@ -1,6 +1,6 @@
 "use strict";
 
-const assert = require("assert");
+const assert = require("assert").strict;
 const easta = require("../");
 
 describe("easta", () => {
@@ -79,5 +79,10 @@ describe("easta", () => {
   it("Unicode 14.0.0", () => {
     // TROLL
     assert(easta("\u{1F9CC}") === "W");
+  });
+
+  it("Unicode 15.0.0", () => {
+    // Shaking Face
+    assert(easta("\u{1FAE8}") === "W");
   });
 });
