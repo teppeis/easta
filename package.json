@@ -23,7 +23,7 @@
     "test": "run-s lint mocha"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
+    "eslint": "^8.35.0",
     "eslint-config-teppeis": "^16.0.0",
     "intelli-espower-loader": "^1.1.0",
     "mocha": "^10.2.0",
