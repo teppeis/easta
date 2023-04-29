@@ -8,7 +8,7 @@
 [![dependency status][deps-image]][deps-url]
 ![License][license]
 
-Based on [EastAsianWidth-14.0.0](http://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth.txt).
+Based on [EastAsianWidth-15.0.0](http://www.unicode.org/Public/15.0.0/ucd/EastAsianWidth.txt).
 
 ## Usage
 
