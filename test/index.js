@@ -6,84 +6,84 @@ const easta = require("../");
 
 describe("easta", () => {
   it("is a function", () => {
-    assert(typeof easta === "function");
+    assert.equal(typeof easta, "function");
   });
 
   it("Narrow", () => {
-    assert(easta("A") === "Na");
+    assert.equal(easta("A"), "Na");
   });
 
   it("Fullwidth", () => {
-    assert(easta("Ａ") === "F");
+    assert.equal(easta("Ａ"), "F");
   });
 
   it("Wide", () => {
-    assert(easta("あ") === "W");
+    assert.equal(easta("あ"), "W");
   });
 
   it("Halfwidth", () => {
-    assert(easta("ｱ") === "H");
+    assert.equal(easta("ｱ"), "H");
   });
 
   it("Ambiguous", () => {
-    assert(easta("α") === "A");
+    assert.equal(easta("α"), "A");
   });
 
   it("Neutral", () => {
-    assert(easta("À") === "N");
+    assert.equal(easta("À"), "N");
   });
 
   it("Out of range", () => {
-    assert(easta("\u{40000}") === "N");
-    assert(easta("\u{50000}") === "N");
-    assert(easta("\u{60000}") === "N");
+    assert.equal(easta("\u{40000}"), "N");
+    assert.equal(easta("\u{50000}"), "N");
+    assert.equal(easta("\u{60000}"), "N");
   });
 
   it("all", () => {
-    assert(easta("\u{0}") === "N");
-    assert(easta("\u{1}") === "N");
-    assert(easta("\u{2}") === "N");
-    assert(easta("\u{3}") === "N");
-    assert(easta("\u{4}") === "N");
-    assert(easta("\u{1F}") === "N");
-    assert(easta("\u{20}") === "Na");
-    assert(easta("\u{21}") === "Na");
-    assert(easta("\u{23}") === "Na");
-    assert(easta("\u{24}") === "Na");
+    assert.equal(easta("\u{0}"), "N");
+    assert.equal(easta("\u{1}"), "N");
+    assert.equal(easta("\u{2}"), "N");
+    assert.equal(easta("\u{3}"), "N");
+    assert.equal(easta("\u{4}"), "N");
+    assert.equal(easta("\u{1F}"), "N");
+    assert.equal(easta("\u{20}"), "Na");
+    assert.equal(easta("\u{21}"), "Na");
+    assert.equal(easta("\u{23}"), "Na");
+    assert.equal(easta("\u{24}"), "Na");
   });
 
   it("Unicode 10.0.0", () => {
     // FLYING SAUCER
-    assert(easta("\u{1F6F8}") === "W");
+    assert.equal(easta("\u{1F6F8}"), "W");
   });
 
   it("Unicode 11.0.0", () => {
     // RACOON
-    assert(easta("\u{1F99D}") === "W");
+    assert.equal(easta("\u{1F99D}"), "W");
   });
 
   it("Unicode 12.0.0", () => {
     // CHAIR
-    assert(easta("\u{1FA91}") === "W");
+    assert.equal(easta("\u{1FA91}"), "W");
   });
 
   it("Unicode 12.1.0", () => {
     // REIWA
-    assert(easta("\u{32FF}") === "W");
+    assert.equal(easta("\u{32FF}"), "W");
   });
 
   it("Unicode 13.0.0", () => {
     // SEAL
-    assert(easta("\u{1F9AD}") === "W");
+    assert.equal(easta("\u{1F9AD}"), "W");
   });
 
   it("Unicode 14.0.0", () => {
     // TROLL
-    assert(easta("\u{1F9CC}") === "W");
+    assert.equal(easta("\u{1F9CC}"), "W");
   });
 
   it("Unicode 15.0.0", () => {
     // Shaking Face
-    assert(easta("\u{1FAE8}") === "W");
+    assert.equal(easta("\u{1FAE8}"), "W");
   });
 });
