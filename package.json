@@ -20,9 +20,11 @@
     "mocha": "mocha --require intelli-espower-loader",
     "prepublishOnly": "run-s build",
     "pretest": "run-s build:minify",
-    "test": "run-s lint mocha"
+    "test": "run-s lint mocha",
+    "unit": "node test/index.js"
   },
   "devDependencies": {
+    "@types/node": "^16.18.39",
     "eslint": "^8.45.0",
     "eslint-config-teppeis": "^17.0.4",
     "intelli-espower-loader": "^1.1.0",
