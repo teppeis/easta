@@ -1,4 +1,4 @@
-const URL = "https://www.unicode.org/Public/15.0.0/ucd/EastAsianWidth.txt";
+const URL = "https://www.unicode.org/Public/15.1.0/ucd/EastAsianWidth.txt";
 
 const res = await fetch(URL);
 const text = await res.text();
@@ -13,7 +13,7 @@ console.log(first.replace(/^# (EastAsianWidth-.*)$/, "// $1"));
 console.log("exports.data = [");
 
 for (const line of lines) {
-  const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?;(\w+)/.exec(line);
+  const match = /^([0-9A-Z]+)(?:\.\.([0-9A-Z]+))?\s*;\s*(\w+)/.exec(line);
   if (match) {
     const [, start, end, type] = match;
     if (

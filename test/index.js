@@ -86,4 +86,10 @@ describe("easta", () => {
     // Shaking Face
     assert.equal(easta("\u{1FAE8}"), "W");
   });
+
+  it("Unicode 15.1.0", () => {
+    // Ideographic subraction
+    // See https://note.com/qvarie/n/ne4726d015431
+    assert.equal(easta("\u{31EF}"), "W");
+  });
 });
