@@ -1,6 +1,6 @@
 "use strict";
 
-const assert = require("assert");
+const assert = require("node:assert");
 const { data, types } = require("./generated-data.min");
 
 assert(data.length > 0);
