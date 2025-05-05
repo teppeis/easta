@@ -92,4 +92,9 @@ describe("easta", () => {
     // See https://note.com/qvarie/n/ne4726d015431
     assert.equal(easta("\u{31EF}"), "W");
   });
+
+  it("Unicode 16.0.0", () => {
+    // HARP
+    assert.equal(easta("\u{1FA89}"), "W");
+  });
 });

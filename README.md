@@ -23,7 +23,7 @@ assert(easta("À") === "N"); // Neutral
 ```
 
 ## Changelog
-- no released: support Node v20+
+- 9.0.0: update for Unicode 16.0.0, support Node v20+
 - 8.0.0: update for Unicode 15.1.0, support Node v18+
 - 7.0.0: update for Unicode 15.0.0, support Node v14+
 - 6.0.0: update for Unicode 14.0.0, support Node v12+ and add typings for TypeScript
