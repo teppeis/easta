@@ -26,7 +26,7 @@
     "eslint": "^8.57.1",
     "eslint-config-teppeis": "^19.1.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.7.3",
+    "prettier": "^3.7.4",
     "uglify-js": "^3.19.3"
   },
   "homepage": "https://github.com/teppeis/easta",
